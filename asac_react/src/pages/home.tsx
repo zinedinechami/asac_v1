@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
 
-      <section className="bg-neutral-900 w-full ">
+      <section className=" w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-25%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
         <div className="pt-20 ">
           <h1 className="text-center text-5xl font-bold text-neutral-50">
             A Home Away from Home
