@@ -9,16 +9,16 @@ export default function Home() {
       <Header />
 
       <section className=" w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-25%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
-        <div className="pt-20 ">
+        <div className="pt-20 pb-12">
           <h1 className="text-center text-5xl font-bold text-neutral-50">
             A Home Away from Home
           </h1>
           <p className="text-center pt-5 text-neutral-50">
-            Find the cheapest nights at the best appartements{" "}
+            Find the cheapest nights at the best appartements in Paris{" "}
           </p>
           {/* <button className="mx-auto">lol</button> */}
           <div className="mt-8  text-center">
-            <input className="h-12 w-96 rounded-full bg-neutral-50 mx-auto "></input>
+            <input className="h-12 w-96 rounded-full bg-neutral-50 mx-auto border border-slate-300 "></input>
           </div>
         </div>
 
@@ -26,13 +26,13 @@ export default function Home() {
           {database.map((data) => {
             return (
               <a key={data.id} href={"logement/" + data.id}>
-                <article className="w-72 h-60 px-2 mb-20 relative rounded-md">
+                <article className="w-72 h-60 px-2 mb-20 relative rounded-xl">
                   <img
                     className="w-72 h-60 object-cover rounded-md"
                     src={data.cover}
                     alt=""
                   />
-                  <p className="text-neutral-50">{data.title}</p>
+                  <p className="text-neutral-50 pt-2">{data.title}</p>
                 </article>
               </a>
             );
