@@ -27,9 +27,10 @@ export default function Logement() {
   return (
     <>
       {/* {data === undefined && <Home />} */}
-      <Header />
+
       {data && (
-        <section className="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-25%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-neutral-50">
+        <section className="bg-neutral-950 bg-[radial-gradient(ellipse_70%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-neutral-50">
+          <Header />
           <div className="w-8/12 mx-auto pt-12">
             {data && <Carrousel pictures={data?.pictures} />}
             <div className="flex flex-col">
@@ -39,7 +40,7 @@ export default function Logement() {
                   <h2>{data?.location}</h2>
                   <h3>Hosted by {data?.host.name}</h3>
                 </div>
-                <div className="w-96 py-8 bg-neutral-900 p-4 mb-4 rounded-xl border border-neutral-700">
+                <div className="w-96 py-6 bg-neutral-900 p-4 mb-4 rounded-xl border border-neutral-700 ">
                   <h1 className="text-2xl font-bold mb-2">137£ night</h1>
                   <h2 className="text-2xl">{data?.rating}</h2>
                   <button className="w-full py-2 bg-slate-50 text-neutral-950 rounded-xl font-bold hover:bg-slate-200 transition-colors">
