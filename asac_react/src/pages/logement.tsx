@@ -30,8 +30,8 @@ export default function Logement() {
       {/* {data === undefined && <Home />} */}
 
       {data && (
-        <section className="bg-neutral-950 bg-[radial-gradient(ellipse_70%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-neutral-50">
-          <nav className="h-20 border-solid border-0 border-b border-neutral-700">
+        <section className="bg-gradient-to-l from-neutral-900 to-black  text-neutral-50">
+          <nav className="h-20 border-solid border-0 border-b border-neutral-800">
             <a className="hover:opacity-80 transition-opacity" href="/">
               <h1 className="text-neutral-100 figtree_bold text-4xl pt-5 pl-12 italic ">
                 asac

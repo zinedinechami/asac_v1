@@ -10,8 +10,8 @@ import github_logo from "../assets/pngegg.png";
 export default function Home() {
   return (
     <>
-      <section className=" w-full     bg-neutral-950 bg-[radial-gradient(ellipse_70%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
-        <h1 className="text-neutral-100 figtree_bold text-4xl pt-5 pl-12 italic ">
+      <section className=" w-full      bg-gradient-to-l from-neutral-900 to-black ">
+        <h1 className="text-neutral-50 figtree_bold text-4xl pt-5 pl-12 italic ">
           asac
         </h1>
         <a
@@ -24,7 +24,7 @@ export default function Home() {
             className="w-10 absolute top-6 right-12"
           />
         </a>
-        <div className="pt-16 pb-10 border-solid border-0 border-b border-neutral-700">
+        <div className="pt-16 pb-10 border-solid border-0 border-b border-neutral-800">
           <h1 className="text-center text-5xl  font-bold text-neutral-50 ">
             A Home Away from Home
           </h1>
