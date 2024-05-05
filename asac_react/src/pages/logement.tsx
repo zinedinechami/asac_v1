@@ -3,7 +3,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import database from "../database.json";
 import Carrousel from "../components/carrousel";
-import Header from "../components/header";
+import Github from "../assets/pngegg.png";
+// import Header from "../components/header";
 // import Home from "./home";
 
 interface UserData {
@@ -30,7 +31,24 @@ export default function Logement() {
 
       {data && (
         <section className="bg-neutral-950 bg-[radial-gradient(ellipse_70%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-neutral-50">
-          <Header />
+          <nav className="h-20 border-solid border-0 border-b border-neutral-700">
+            <a className="hover:opacity-80 transition-opacity" href="/">
+              <h1 className="text-neutral-100 figtree_bold text-4xl pt-5 pl-12 italic ">
+                asac
+              </h1>
+            </a>
+
+            <a
+              className="hover:opacity-80 transition-opacity"
+              href="https://github.com/zinedinechami/asac_v1"
+            >
+              <img
+                src={Github}
+                alt="github_logo"
+                className="w-10 absolute top-6 right-12"
+              />
+            </a>
+          </nav>
           <div className="w-8/12 mx-auto pt-12">
             {data && <Carrousel pictures={data?.pictures} />}
             <div className="flex flex-col">
