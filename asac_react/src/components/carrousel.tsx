@@ -19,7 +19,7 @@ export default function Carrousel({ pictures }: Props) {
     <>
       <div className="mx-auto w-full h-96 relative justify-center ">
         <img
-          className="w-full h-96  rounded-xl object-cover"
+          className="w-full h-96  rounded-xl object-cover opacity-90 "
           src={pictures[imageIndex]}
           alt=""
         />
