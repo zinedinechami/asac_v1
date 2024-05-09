@@ -7,7 +7,10 @@ import Github from "../assets/pngegg.png";
 // import Header from "../components/header";
 // import Home from "./home";
 
-interface UserData {
+// todo: add seearch feature
+
+// faire un type a la place
+type UserData = {
   title: string;
   pictures: string;
   description: string;
@@ -15,11 +18,14 @@ interface UserData {
   name: string;
   location: string;
   rating: number;
-}
+};
 
 export default function Logement() {
   const { id } = useParams();
   const [data, setData] = useState<UserData | null>(null);
+
+  // todo: faire de la gestion d'erreur avec le find
+  // mettre une valeur qui correspond au type de data
 
   useEffect(() => {
     setData(database.find((findObject) => findObject.id === id));

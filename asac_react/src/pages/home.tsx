@@ -66,12 +66,12 @@ export default function Home() {
               className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-neutral-700 border-2 border-neutral-800 rounded-full hover:bg-neutral-600 "
               href=""
             >
-              +500
+              +1k
             </a>
           </div>
         </div>
 
-        <div className="ml-auto flex flex-wrap w-11/12 pt-10 ">
+        <div className="ml-auto flex flex-wrap w-11/12 pt-10 pl-16">
           {/* <nav className="bg-stone-950 h-16 w-full sticky top-0 flex  border-solid border-0 border-b border-neutral-800 z-50">
             <h1 className="text-neutral-50 figtree_bold text-3xl mt-3 pl-12 italic ">
               asac
@@ -83,7 +83,7 @@ export default function Home() {
                 <article className="w-64 h-60 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
                   <div className="hover:opacity-80 transition-opacity ">
                     <img
-                      className="w-72 h-60 object-cover rounded-xl "
+                      className="w-72 h-60 object-cover rounded-lg "
                       src={data.cover}
                       alt=""
                     />
@@ -91,7 +91,7 @@ export default function Home() {
                   <p className="text-neutral-50 pt-2 text-sm font-bold">
                     {data.title}
                   </p>
-                  <p className="text-neutral-50 text-sm ">
+                  <p className="text-neutral-200 text-sm ">
                     Hosted by {data.host.name}
                   </p>
                 </article>
