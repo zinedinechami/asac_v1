@@ -80,7 +80,7 @@ export default function Home() {
           {database.map((data) => {
             return (
               <a key={data.id} href={"logement/" + data.id}>
-                <article className="w-64 h-60 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
+                <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
                   <div className="hover:opacity-80 transition-opacity ">
                     <img
                       className="w-72 h-60 object-cover rounded-lg "
@@ -88,12 +88,17 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <p className="text-neutral-50 pt-2 text-sm font-bold">
-                    {data.title}
-                  </p>
-                  <p className="text-neutral-200 text-sm ">
-                    Hosted by {data.host.name}
-                  </p>
+                  <div className="mb-2">
+                    <p className="text-neutral-50 pt-2 text-sm font-bold">
+                      {data.title}
+                    </p>
+                    <p className="text-neutral-200 text-sm ">
+                      Hosted by {data.host.name}
+                    </p>
+                    <p className="text-neutral-200 text-sm font-bold ">
+                      {data.price} $ night
+                    </p>
+                  </div>
                 </article>
               </a>
             );
