@@ -23,7 +23,8 @@
       "Frigo",
       "WIFI"
     ],
-    "tags": ["Batignolle", "Montmartre"]
+    "tags": ["Batignolle", "Montmartre"],
+    "price": "123"
   },
   {
     "id": "b9123946",
@@ -52,7 +53,8 @@
       "Cuisine équipée",
       "Télévision"
     ],
-    "tags": ["Canal Saint Martin", "République", "Appartement"]
+    "tags": ["Canal Saint Martin", "République", "Appartement"],
+    "price": "171"
   },
   {
     "id": "46d188c5",
@@ -72,7 +74,8 @@
     "rating": "3",
     "location": "Ile de France - Paris 20e",
     "equipments": ["Wi-fi", "Cuisine équipée", "Télévision", "Sèche Cheveux"],
-    "tags": ["Buttes Chaumont", "Laumière", "Studio"]
+    "tags": ["Buttes Chaumont", "Laumière", "Studio"],
+    "price": "113"
   },
   {
     "id": "7af00cd6",
@@ -98,7 +101,8 @@
       "Climatisation",
       "Télévision"
     ],
-    "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
+    "tags": ["Parmentier", "Marais", "Parc", "Night Life"],
+    "price": "173"
   },
   {
     "id": "0979876d",
@@ -126,7 +130,8 @@
       "Chambre Séparée",
       "Parking"
     ],
-    "tags": ["Goncourt", "Proche commerces"]
+    "tags": ["Goncourt", "Proche commerces"],
+    "price": "159"
   },
   {
     "id": "f72a452f",
@@ -147,7 +152,8 @@
     "rating": "5",
     "location": "Ile de France - Paris 18e",
     "equipments": ["Chambre Séparée", "Parking"],
-    "tags": ["Montmartre", "Culture", "Charme"]
+    "tags": ["Montmartre", "Culture", "Charme"],
+    "price": "131"
   },
   {
     "id": "b4c67936",
@@ -174,7 +180,8 @@
       "Bureau",
       "Parking"
     ],
-    "tags": ["Transports", "Cheap", "18ème"]
+    "tags": ["Transports", "Cheap", "18ème"],
+    "price": "199"
   },
   {
     "id": "bc6f7112",
@@ -203,7 +210,8 @@
       "Lit King Size",
       "Ascenseur"
     ],
-    "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"]
+    "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"],
+    "price": "183"
   },
   {
     "id": "cb2f9222",
@@ -230,7 +238,8 @@
       "Wi-fi",
       "Parking"
     ],
-    "tags": ["Montparnasse", "Commerces", "Famille"]
+    "tags": ["Montparnasse", "Commerces", "Famille"],
+    "price": "184"
   },
   {
     "id": "d60ca600",
@@ -257,7 +266,8 @@
       "Wi-fi",
       "Ascenseur"
     ],
-    "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"]
+    "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"],
+    "price": "171"
   },
   {
     "id": "2cf259e1",
@@ -277,7 +287,8 @@
     "rating": "4",
     "location": "Ile de France - Paris 11e",
     "equipments": ["Clic-clac", "Four", "Sèche Cheveux", "Wi-fi"],
-    "tags": ["Marais", "Studio", "Parc"]
+    "tags": ["Marais", "Studio", "Parc"],
+    "price": "119"
   },
   {
     "id": "5323c29b",
@@ -304,7 +315,8 @@
       "TV",
       "Bouilloire"
     ],
-    "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"]
+    "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"],
+    "price": "173"
   },
   {
     "id": "af6d2d48",
@@ -331,7 +343,8 @@
       "Frigo",
       "Bouilloire"
     ],
-    "tags": ["Forêt", "Nature", "Musée d'Ecouen"]
+    "tags": ["Forêt", "Nature", "Musée d'Ecouen"],
+    "price": "109"
   },
   {
     "id": "7cbb378e",
@@ -361,7 +374,8 @@
       "Cintres",
       "Équipements de base"
     ],
-    "tags": ["Forêt", "Nature", "Grande maison"]
+    "tags": ["Forêt", "Nature", "Grande maison"],
+    "price": "137"
   },
   {
     "id": "ba55a0cc",
@@ -393,7 +407,8 @@
       "Micro-Ondes",
       "Parking"
     ],
-    "tags": ["Nature", "Groupe", "Maison"]
+    "tags": ["Nature", "Groupe", "Maison"],
+    "price": "136"
   },
   {
     "id": "1e181317",
@@ -422,7 +437,8 @@
       "Micro-Ondes",
       "Parking"
     ],
-    "tags": ["La Défense", "Loft", "Luxe"]
+    "tags": ["La Défense", "Loft", "Luxe"],
+    "price": "106"
   },
   {
     "id": "1e180563",
@@ -450,7 +466,8 @@
       "Wi-fi",
       "Micro-Ondes"
     ],
-    "tags": ["Vue Parc", "Apt de Charme"]
+    "tags": ["Vue Parc", "Apt de Charme"],
+    "price": "104"
   },
   {
     "id": "6ff132c6",
@@ -475,6 +492,7 @@
       "Wi-fi",
       "Micro-Ondes"
     ],
-    "tags": ["Studio", "Charmant", "13e"]
+    "tags": ["Studio", "Charmant", "13e"],
+    "price": "188"
   }
 ]
