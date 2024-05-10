@@ -25,18 +25,23 @@ export default function Home() {
           />
         </a>
         <div className="pt-16 pb-10 border-solid border-0 border-b border-neutral-800">
-          <h1 className="text-center text-5xl  font-bold text-neutral-50 ">
-            A Home Away from Home
+          <h1 className="text-center text-6xl  font-bold text-neutral-50 ">
+            Your Home, Everywhere
           </h1>
           <p className="text-center pt-2 text-neutral-200">
             Find the cheapest nights at the best appartements{" "}
           </p>
           {/* <button className="mx-auto">lol</button> */}
-          <div className="mt-8  text-center">
+          <div className="mt-8 mb-2 text-center">
             <input
               placeholder="Search asac.com"
-              className="h-12 w-96 rounded-full cursor-pointer bg-neutral-100 mx-auto border border-slate-300 text-center focus:ring-0 outline-0 hover:opacity-90 transition-opacity"
+              className="h-12 w-80 rounded-md  cursor-pointer  bg-neutral-50 mx-auto   text-center focus:ring-0 outline-0 hover:bg-neutral-300 transition-colors"
             ></input>
+            <a href="#appartements">
+              <button className="h-12  bg-neutral-500 text-neutral-50 mx-4 px-4 rounded-md">
+                Search
+              </button>
+            </a>
           </div>
           <h2 className="text-center text-neutral-50 pt-6">
             Join our community !
@@ -63,15 +68,24 @@ export default function Home() {
               alt=""
             />
             <a
-              className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-neutral-700 border-2 border-neutral-800 rounded-full hover:bg-neutral-600 "
+              className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-neutral-500 border-2 border-neutral-800 rounded-full hover:bg-neutral-600 "
               href=""
             >
               +1k
             </a>
           </div>
         </div>
+        <h1></h1>
+        {/* add number of locations */}
 
-        <div className="ml-auto flex flex-wrap w-11/12 pt-10 pl-16">
+        <h1 className="text-neutral-50 pl-48 pt-10 text-xl">
+          Over {database.length} Appartements in{" "}
+          <span className="font-bold">Paris</span>{" "}
+        </h1>
+        <div
+          id="appartements"
+          className="ml-auto flex flex-wrap w-11/12 pt-10 pl-16"
+        >
           {/* <nav className="bg-stone-950 h-16 w-full sticky top-0 flex  border-solid border-0 border-b border-neutral-800 z-50">
             <h1 className="text-neutral-50 figtree_bold text-3xl mt-3 pl-12 italic ">
               asac
@@ -96,7 +110,7 @@ export default function Home() {
                       Hosted by {data.host.name}
                     </p>
                     <p className="text-neutral-200 text-sm font-bold ">
-                      {data.price} $ night
+                      $ {data.price} <span className="font-normal">night</span>
                     </p>
                   </div>
                 </article>
