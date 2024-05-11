@@ -1,5 +1,6 @@
 import database from "../database.json";
 import github_logo from "../assets/pngegg.png";
+import { useState } from "react";
 
 // header that becomes sticky at scroll down?
 
@@ -8,6 +9,8 @@ import github_logo from "../assets/pngegg.png";
 // slight graidant on text
 
 export default function Home() {
+  const [search, setSearch] = useState("");
+
   return (
     <>
       <section className=" w-full      bg-gradient-to-l from-neutral-900 to-black ">
@@ -24,7 +27,7 @@ export default function Home() {
             className="w-10 absolute top-6 right-12"
           />
         </a>
-        <div className="pt-16 pb-10 border-solid border-0 border-b border-neutral-800">
+        <div className="pt-24 pb-12 border-solid border-0 border-b border-neutral-800">
           <h1 className="text-center text-6xl  font-bold text-neutral-50 ">
             Your Home, Everywhere
           </h1>
@@ -34,11 +37,12 @@ export default function Home() {
           {/* <button className="mx-auto">lol</button> */}
           <div className="mt-8 mb-2 text-center">
             <input
+              onChange={(e) => setSearch(e.target.value)}
               placeholder="Search asac.com"
-              className="h-12 w-80 rounded-md  cursor-pointer  bg-neutral-50 mx-auto   text-center focus:ring-0 outline-0 hover:bg-neutral-300 transition-colors"
+              className="h-12 w-80 rounded-lg cursor-pointer  bg-neutral-50 mx-auto   text-center focus:ring-0 outline-0 hover:bg-neutral-300 transition-colors"
             ></input>
             <a href="#appartements">
-              <button className="h-12  bg-neutral-500 text-neutral-50 mx-4 px-4 rounded-md">
+              <button className="h-12  bg-neutral-500 text-neutral-50 mx-4 px-4 rounded-lg font-bold">
                 Search
               </button>
             </a>
@@ -75,8 +79,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <h1></h1>
-        {/* add number of locations */}
 
         <h1 className="text-neutral-50 pl-48 pt-10 text-xl">
           Over {database.length} Appartements in{" "}
@@ -91,32 +93,39 @@ export default function Home() {
               asac
             </h1>
           </nav> */}
-          {database.map((data) => {
-            return (
-              <a key={data.id} href={"logement/" + data.id}>
-                <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
-                  <div className="hover:opacity-80 transition-opacity ">
-                    <img
-                      className="w-72 h-60 object-cover rounded-lg "
-                      src={data.cover}
-                      alt=""
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <p className="text-neutral-50 pt-2 text-sm font-bold">
-                      {data.title}
-                    </p>
-                    <p className="text-neutral-200 text-sm ">
-                      Hosted by {data.host.name}
-                    </p>
-                    <p className="text-neutral-200 text-sm font-bold ">
-                      $ {data.price} <span className="font-normal">night</span>
-                    </p>
-                  </div>
-                </article>
-              </a>
-            );
-          })}
+          {database
+            .filter((data) => {
+              return search.toLowerCase() === ""
+                ? data
+                : data.title.toLowerCase().includes(search);
+            })
+            .map((data) => {
+              return (
+                <a key={data.id} href={"logement/" + data.id}>
+                  <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
+                    <div className="hover:opacity-80 transition-opacity ">
+                      <img
+                        className="w-72 h-60 object-cover rounded-lg "
+                        src={data.cover}
+                        alt=""
+                      />
+                    </div>
+                    <div className="mb-2">
+                      <p className="text-neutral-50 pt-2 text-sm font-bold">
+                        {data.title}
+                      </p>
+                      <p className="text-neutral-200 text-sm ">
+                        Hosted by {data.host.name}
+                      </p>
+                      <p className="text-neutral-200 text-sm font-bold ">
+                        $ {data.price}{" "}
+                        <span className="font-normal">night</span>
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              );
+            })}
         </div>
       </section>
     </>
