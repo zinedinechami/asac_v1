@@ -39,10 +39,10 @@ export default function Home() {
             <input
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search asac.com"
-              className="h-12 w-80 rounded-lg cursor-pointer  bg-neutral-50 mx-auto   text-center focus:ring-0 outline-0 hover:bg-neutral-300 transition-colors"
+              className="h-12 w-80 rounded-lg cursor-pointer  bg-neutral-200 mx-auto   text-center focus:ring-0 outline-0 hover:bg-white transition-colors"
             ></input>
             <a href="#appartements">
-              <button className="h-12  bg-neutral-500 text-neutral-50 mx-4 px-4 rounded-lg font-bold">
+              <button className="h-12  bg-neutral-400 hover:bg-neutral-500 transition-colors text-neutral-50 mx-4 px-4 rounded-lg font-semibold">
                 Search
               </button>
             </a>
@@ -71,12 +71,9 @@ export default function Home() {
               src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
               alt=""
             />
-            <a
-              className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-neutral-500 border-2 border-neutral-800 rounded-full hover:bg-neutral-600 "
-              href=""
-            >
+            <div className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-neutral-500 border-2 border-neutral-800 rounded-full  ">
               +1k
-            </a>
+            </div>
           </div>
         </div>
 
