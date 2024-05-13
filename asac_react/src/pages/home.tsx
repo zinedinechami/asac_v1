@@ -39,10 +39,10 @@ export default function Home() {
             <input
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search asac.com"
-              className="h-12 w-80 rounded-lg cursor-pointer  bg-neutral-200 mx-auto   text-center focus:ring-0 outline-0 hover:bg-white transition-colors"
+              className="h-12 w-80 rounded-lg cursor-pointer  bg-neutral-50 mx-auto   text-center focus:ring-0 outline-0  transition-colors"
             ></input>
             <a href="#appartements">
-              <button className="h-12  bg-neutral-400 hover:bg-neutral-500 transition-colors text-neutral-50 mx-4 px-4 rounded-lg font-semibold">
+              <button className="h-12  bg-emerald-500 hover:bg-emerald-600 transition-colors text-neutral-50 mx-4 px-4 rounded-lg font-semibold">
                 Search
               </button>
             </a>
@@ -99,7 +99,7 @@ export default function Home() {
             .map((data) => {
               return (
                 <a key={data.id} href={"logement/" + data.id}>
-                  <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl  shadow-xl opacity-90 ">
+                  <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl   opacity-90 ">
                     <div className="hover:opacity-80 transition-opacity ">
                       <img
                         className="w-72 h-60 object-cover rounded-lg "
