@@ -19,7 +19,7 @@ export default function Carrousel({ pictures }: Props) {
     <>
       <div className="mx-auto w-full h-96 relative justify-center ">
         <img
-          className="w-full h-96  rounded-xl object-cover opacity-90 "
+          className="w-full h-96  rounded-xl object-cover opacity-90 border shadow-sm "
           src={pictures[imageIndex]}
           alt=""
         />
@@ -27,10 +27,10 @@ export default function Carrousel({ pictures }: Props) {
           <div>
             <button
               onClick={showNextImage}
-              className="absolute right-2 top-1/2 text-2xl"
+              className="absolute carrousel_arrows_right top-1/2 text-2xl"
             >
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white"
+                className="w-6 h-6 text-neutral-800 "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -49,10 +49,10 @@ export default function Carrousel({ pictures }: Props) {
             </button>
             <button
               onClick={showPrevImage}
-              className="absolute left-2 top-1/2 text-2xl"
+              className="absolute  carrousel_arrows_left top-1/2 text-2xl"
             >
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white"
+                className="w-6 h-6 text-neutral-800 "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

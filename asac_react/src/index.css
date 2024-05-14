@@ -17,6 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.figtree_bold {
-  font-weight: 800;
+.carrousel_arrows_left {
+  left: -30px;
+}
+
+.carrousel_arrows_right {
+  right: -30px;
 }

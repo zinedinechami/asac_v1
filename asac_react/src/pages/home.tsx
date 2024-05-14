@@ -51,59 +51,25 @@ export default function Home() {
               <input
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search asac.com"
-                className="h-12 w-80 rounded-full cursor-pointer shadow-sm  bg-white mx-auto  border text-center focus:ring-0 outline-0  transition-colors"
+                className="h-14 w-96 rounded-full cursor-pointer shadow-sm  bg-white mx-auto  border text-center focus:ring-0 outline-0 hover:bg-neutral-100  transition-colors"
               ></input>
               <a href="#appartements">
-                <button className="h-12  bg-neutral-900 hover:bg-neutral-700   transition-colors text-neutral-50 mx-4 px-5 rounded-full font-semibold">
+                <button className="h-14  bg-neutral-900 hover:bg-neutral-700   transition-colors text-neutral-50 mx-4 px-6 rounded-full font-semibold">
                   Search
                 </button>
               </a>
             </div>
           </div>
-
-          {/* <div className="flex -space-x-4 rtl:space-x-reverse justify-center pt-8">
-            <img
-              className="w-10 h-10 border-2  rounded-full border-neutral-300"
-              src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2  rounded-full border-neutral-300"
-              src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2  rounded-full border-neutral-300"
-              src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-3.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2  rounded-full border-neutral-300"
-              src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
-              alt=""
-            />
-            <div className="flex items-center justify-center w-10 h-10 text-xs font-medium text-black bg-neutral-50 border-2 border-neutral-300 rounded-full  ">
-              +1k
-            </div>
-          </div>
-          <h2 className="text-center text-neutral-950 font-semibold pt-2">
-            Join our community !
-          </h2> */}
         </div>
         <div className="border rounded-xl">
-          <h1 className="text-neutral-900 pl-48 pt-10 text-base">
-            Over {database.length} Appartements in{" "}
-            <span className="font-bold">Paris</span>{" "}
+          <h1 className="text-neutral-900 pl-32 pt-10 text-base">
+            Currently <span className="font-bold">{database.length}</span>{" "}
+            Appartements in <span className="font-bold">Paris</span>{" "}
           </h1>
           <div
             id="appartements"
-            className="ml-auto flex flex-wrap w-11/12 pt-10 pl-16"
+            className="ml-auto flex flex-wrap w-11/12 pt-10 "
           >
-            {/* <nav className="bg-stone-950 h-16 w-full sticky top-0 flex  border-solid border-0 border-b border-neutral-800 z-50">
-            <h1 className="text-neutral-50 figtree_bold text-3xl mt-3 pl-12 italic ">
-              asac
-            </h1>
-          </nav> */}
             {database
               .filter((data) => {
                 return search.toLowerCase() === ""
@@ -113,10 +79,10 @@ export default function Home() {
               .map((data) => {
                 return (
                   <a key={data.id} href={"logement/" + data.id}>
-                    <article className="w-64 h-64 mr-10 mb-20 relative rounded-xl    ">
-                      <div className="hover:opacity-80 transition-opacity ">
+                    <article className="w-70 h-72 mr-10 mb-20 relative rounded-xl    ">
+                      <div className="hover:opacity-90 transition-opacity ">
                         <img
-                          className="w-72 h-60 object-cover rounded-lg "
+                          className="w-72 h-64 object-cover rounded-lg hover:shadow-lg transition-shadow"
                           src={data.cover}
                           alt=""
                         />
@@ -125,11 +91,13 @@ export default function Home() {
                         <p className="text-neutral-900 pt-2 text-sm font-bold">
                           {data.title}
                         </p>
-                        <p className="text-neutral-900 text-sm ">
+
+                        <p className="text-neutral-500 text-sm ">
                           Hosted by {data.host.name}
                         </p>
+
                         <p className="text-neutral-900 text-sm font-bold ">
-                          $ {data.price}{" "}
+                          € {data.price}{" "}
                           <span className="font-normal">night</span>
                         </p>
                       </div>
