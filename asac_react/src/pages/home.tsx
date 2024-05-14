@@ -55,7 +55,7 @@ export default function Home() {
                 className="h-14 w-96 rounded-full cursor-pointer shadow-sm  bg-white mx-auto  border text-center focus:ring-0 outline-0 hover:bg-neutral-100  transition-colors"
               ></input>
               <a href="#appartements">
-                <button className="h-14  bg-neutral-900 hover:bg-neutral-700   transition-colors text-neutral-50 mx-4 px-6 rounded-full font-semibold">
+                <button className="h-14  bg-emerald-400 hover:bg-emerald-500  border border-emerald-500 shadow-sm  transition-colors text-neutral-50 mx-4 px-6 rounded-full font-semibold">
                   Search
                 </button>
               </a>

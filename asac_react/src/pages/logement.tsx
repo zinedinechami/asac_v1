@@ -43,7 +43,7 @@ export default function Logement() {
                 <h2>{data?.location}</h2>
                 <div className="flex pt-6">
                   <img
-                    className="h-12 mr-4 rounded-full"
+                    className="h-12 mr-4 rounded-full border"
                     src={data?.host.picture}
                     alt=""
                   />
@@ -60,7 +60,7 @@ export default function Logement() {
                   € {data?.price} <span className="font-normal">night</span>
                 </h1>
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
-                <button className="w-full py-3 bg-neutral-950 text-neutral-50 rounded-lg font-bold hover:bg-neutral-800 transition-colors">
+                <button className="w-full py-3 bg-emerald-400 hover:bg-emerald-500  border border-emerald-500 text-neutral-50 rounded-lg shadow-sm font-bold  transition-colors">
                   Reserve
                 </button>
                 <div className="pt-4">
