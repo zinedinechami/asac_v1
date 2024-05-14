@@ -1,6 +1,7 @@
 import database from "../database.json";
 
 import { useState } from "react";
+import Footer from "../components/footer";
 
 // header that becomes sticky at scroll down?
 
@@ -63,8 +64,8 @@ export default function Home() {
         </div>
         <div className="border rounded-xl">
           <h1 className="text-neutral-900 pl-32 pt-10 text-base">
-            Currently <span className="font-bold">{database.length}</span>{" "}
-            Appartements in <span className="font-bold">Paris</span>{" "}
+            Over <span className="font-bold">{database.length}</span>{" "}
+            Appartements Available
           </h1>
           <div
             id="appartements"
@@ -108,6 +109,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

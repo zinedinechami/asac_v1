@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import database from "../database.json";
 import Carrousel from "../components/carrousel";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 // todo: faire un type a la place, create an object for name
 type UserData = {
@@ -32,7 +33,7 @@ export default function Logement() {
       {/* {data === undefined && <Home />} */}
 
       {data && (
-        <section className="bg-neutral-50  text-neutral-950 pb-96">
+        <section className="bg-neutral-50  text-neutral-950 pb-52">
           <Header />
           <div className="w-8/12 mx-auto pt-12">
             {data && <Carrousel pictures={data?.pictures} />}
@@ -86,7 +87,7 @@ export default function Logement() {
           </div>
         </section>
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
