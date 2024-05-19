@@ -54,34 +54,36 @@ export default function Logement() {
                 <hr className="my-6 h-px w-7/12 border-t-0 bg-neutral-200 " />
                 <p className="w-7/12 text-lg">{data?.description}</p>
               </div>
-              <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
+              <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm text-center ">
                 <h1 className="text-2xl font-bold mb-4">
                   {" "}
                   € {data?.price} <span className="font-normal">night</span>
                 </h1>
+                <hr className="my-2 h-px  border-t-0 bg-neutral-200 " />
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
-                <button className="w-full py-3 bg-emerald-400 hover:bg-emerald-500  border border-emerald-500 text-neutral-50 rounded-lg shadow-sm font-bold  transition-colors">
-                  Reserve
-                </button>
-                <div className="pt-4">
+
+                <div className="pb-4">
                   <p className="pt-2">
-                    € {data?.price} x 5 =
+                    € {data?.price} x 5
                     <span className="font-bold pl-2">${data?.price * 5}</span>
                   </p>
 
                   <p className="pt-2">
                     {" "}
-                    Asac Service Fee =
+                    Asac Service Fee
                     <span className="font-bold pl-2">€ 100</span>
                   </p>
                   <p className="pt-2">
-                    Taxes = <span className=" font-bold pl-2">€ 10</span>
+                    Taxes<span className=" font-bold pl-2">€ 10</span>
                   </p>
                 </div>
-                <hr className="my-6 h-px  border-t-0 bg-neutral-200 " />
-                <p className="font-bold text-xl">
+
+                <p className="font-bold text-2xl">
                   Total € {data?.price * 5 + 100 + 10}
                 </p>
+                <button className="w-full py-3 mt-5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-neutral-50 rounded-lg shadow-sm font-bold  hover:scale-105 transition">
+                  Reserve
+                </button>
               </div>
             </div>
           </div>

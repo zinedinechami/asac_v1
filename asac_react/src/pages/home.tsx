@@ -55,14 +55,30 @@ export default function Home() {
                 className="h-14 w-96 rounded-full cursor-pointer shadow-sm  bg-white mx-auto  border text-center focus:ring-0 outline-0 hover:bg-neutral-100  transition-colors"
               ></input>
               <a href="#appartements">
-                <button className="h-14  bg-emerald-400 hover:bg-emerald-500  border border-emerald-500 shadow-sm  transition-colors text-neutral-50 mx-4 px-6 rounded-full font-semibold">
-                  Search
+                <button className="h-14  bg-gradient-to-r from-indigo-500 to-indigo-700 border   shadow-sm   text-neutral-50 mx-4 px-6 rounded-full font-semibold hover:scale-105 transition">
+                  <div className="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-5 h-6 mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                      />
+                    </svg>
+                    Search
+                  </div>
                 </button>
               </a>
             </div>
           </div>
         </div>
-        <div className="border rounded-xl">
+        <div className="border shadow-sm">
           <h1 className="text-neutral-900 pl-32 pt-10 text-base">
             Over <span className="font-bold">{database.length}</span>{" "}
             Appartements Available
