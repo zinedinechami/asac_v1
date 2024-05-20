@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import database from "../database.json";
@@ -6,40 +6,47 @@ import Carrousel from "../components/carrousel";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-// todo: faire un type a la place, create an object for name
 type UserData = {
+  id: string;
   title: string;
+  cover: string;
   pictures: string;
   description: string;
-  host: string;
-  name: string;
+  host: {
+    name: string;
+    picture: string;
+  };
+  rating: string;
   location: string;
-  rating: number;
+  equipments: string[];
+  tags: string[];
+  price: number;
 };
 
 export default function Logement() {
   const { id } = useParams();
   const [data, setData] = useState<UserData | null>(null);
 
-  // todo: faire de la gestion d'erreur avec le find
+  const navigate = useNavigate();
+
   // mettre une valeur qui correspond au type de data
 
   useEffect(() => {
-    setData(database.find((findObject) => findObject.id === id));
-  }, [data, id]);
+    database === undefined
+      ? navigate("/")
+      : setData(database.find((findObject) => findObject.id === id) || null);
+  }, [id, navigate]);
 
   return (
     <>
-      {/* {data === undefined && <Home />} */}
-
       {data && (
-        <section className="bg-neutral-50  text-neutral-950 pb-52">
+        <section className="bg-gray-50  text-neutral-950 pb-52">
           <Header />
           <div className="w-8/12 mx-auto pt-12">
             {data && <Carrousel pictures={data?.pictures} />}
             <div className="flex flex-row  relative ">
               <div className="pt-8">
-                <h1 className="text-2xl font-bold">{data?.title}</h1>
+                <h1 className="text-2xl font-semibold">{data?.title}</h1>
                 <h2>{data?.location}</h2>
                 <div className="flex pt-6">
                   <img
@@ -47,41 +54,48 @@ export default function Logement() {
                     src={data?.host.picture}
                     alt=""
                   />
-                  <h3 className="font-bold pt-3 text-base">
+                  <h3 className="font-semibold pt-3 text-base">
                     Hosted by {data?.host.name}
                   </h3>
                 </div>
                 <hr className="my-6 h-px w-7/12 border-t-0 bg-neutral-200 " />
                 <p className="w-7/12 text-lg">{data?.description}</p>
               </div>
-              <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm text-center ">
+              <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
                 <h1 className="text-2xl font-bold mb-4">
                   {" "}
-                  € {data?.price} <span className="font-normal">night</span>
+                  € {data?.price}{" "}
+                  <span className="font-normal text-base">night</span>
                 </h1>
                 <hr className="my-2 h-px  border-t-0 bg-neutral-200 " />
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
 
                 <div className="pb-4">
-                  <p className="pt-2">
+                  <p className="pt-2 underline">
                     € {data?.price} x 5
-                    <span className="font-bold pl-2">${data?.price * 5}</span>
+                    <span className=" pl-2 absolute right-5">
+                      ${data?.price * 5}
+                    </span>
                   </p>
 
-                  <p className="pt-2">
+                  <p className="pt-2 underline">
                     {" "}
                     Asac Service Fee
-                    <span className="font-bold pl-2">€ 100</span>
+                    <span className=" pl-2 absolute right-5">€ 100</span>
                   </p>
-                  <p className="pt-2">
-                    Taxes<span className=" font-bold pl-2">€ 10</span>
+                  <p className="pt-2 underline">
+                    Taxes
+                    <span className="  pl-2 absolute right-5">€ 10</span>
                   </p>
                 </div>
 
-                <p className="font-bold text-2xl">
-                  Total € {data?.price * 5 + 100 + 10}
+                <p className="font-semibold  text-xl">
+                  Total{" "}
+                  <span className="absolute right-5">
+                    € {data?.price * 5 + 100 + 10}
+                  </span>
                 </p>
-                <button className="w-full py-3 mt-5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-neutral-50 rounded-lg shadow-sm font-bold  hover:scale-105 transition">
+                <button className="w-full py-3 mt-5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-neutral-50 rounded-lg shadow-sm font-bold  hover:scale-95 transition">
                   Reserve
                 </button>
               </div>
