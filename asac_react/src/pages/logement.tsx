@@ -42,7 +42,7 @@ export default function Logement() {
       {data && (
         <section className="bg-gray-50  text-neutral-950 pb-52">
           <Header />
-          <div className="w-8/12 mx-auto pt-12">
+          <div className="w-8/12 mx-auto pt-8">
             {data && <Carrousel pictures={data?.pictures} />}
             <div className="flex flex-row  relative ">
               <div className="pt-8">
@@ -59,17 +59,19 @@ export default function Logement() {
                   </h3>
                 </div>
                 <hr className="my-6 h-px w-7/12 border-t-0 bg-neutral-200 " />
-                <p className="w-7/12 text-lg">{data?.description}</p>
+                <p className="w-7/12 text-base">{data?.description}</p>
               </div>
               <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
-                <h1 className="text-2xl font-bold mb-4">
+                <h1 className="text-2xl font-bold ">
                   {" "}
                   € {data?.price}{" "}
                   <span className="font-normal text-base">night</span>
                 </h1>
-                <hr className="my-2 h-px  border-t-0 bg-neutral-200 " />
-                {/* <h2 className="text-2xl">{data?.rating}</h2> */}
 
+                {/* <h2 className="text-2xl">{data?.rating}</h2> */}
+                <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-br from-yellow-300  to-orange-300 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
+                  Reserve
+                </button>
                 <div className="pb-4">
                   <p className="pt-2 underline">
                     € {data?.price} x 5
@@ -88,16 +90,13 @@ export default function Logement() {
                     <span className="  pl-2 absolute right-5">€ 10</span>
                   </p>
                 </div>
-
-                <p className="font-semibold  text-xl">
+                <hr className="my-2 h-px  border-t-0 bg-neutral-200 " />
+                <p className="font-semibold  text-xl mt-4">
                   Total{" "}
                   <span className="absolute right-5">
                     € {data?.price * 5 + 100 + 10}
                   </span>
                 </p>
-                <button className="w-full py-3 mt-5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-neutral-50 rounded-lg shadow-sm font-bold  hover:scale-95 transition">
-                  Reserve
-                </button>
               </div>
             </div>
           </div>
