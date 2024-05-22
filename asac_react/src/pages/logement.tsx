@@ -69,9 +69,11 @@ export default function Logement() {
                 </h1>
 
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
-                <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-br from-yellow-300  to-orange-300 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
-                  Reserve
-                </button>
+                <a href="/reservation">
+                  <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-br from-yellow-300  to-orange-300 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
+                    Reserve
+                  </button>
+                </a>
                 <div className="pb-4">
                   <p className="pt-2 underline">
                     € {data?.price} x 5

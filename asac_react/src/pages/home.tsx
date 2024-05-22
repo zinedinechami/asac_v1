@@ -37,7 +37,7 @@ export default function Home() {
                 className="h-14 w-80 rounded-xl cursor-pointer shadow mt-0 bg-white mx-auto ring-yellow-200 border text-center focus:ring-1 outline-0   transition-colors"
               ></input>
               <a href="#appartements">
-                <button className="h-14  bg-gradient-to-br from-yellow-300  to-orange-300  shadow   text-white mx-2 px-4 rounded-xl font-medium hover:scale-105 transition">
+                <button className="h-14  bg-gradient-to-br from-yellow-300  to-orange-300  shadow   text-white mx-2 px-4 rounded-xl font-medium hover:scale-95 transition">
                   <div className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
