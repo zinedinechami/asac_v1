@@ -45,7 +45,7 @@ export default function Logement() {
           <div className="w-8/12 mx-auto pt-8">
             {data && <Carrousel pictures={data?.pictures} />}
             <div className="flex flex-row  relative ">
-              <div className="pt-8">
+              <div className="pt-6">
                 <h1 className="text-2xl font-semibold">{data?.title}</h1>
                 <h2>{data?.location}</h2>
                 <div className="flex pt-6">
@@ -62,7 +62,7 @@ export default function Logement() {
                 <p className="w-7/12 text-base">{data?.description}</p>
               </div>
               <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
-                <h1 className="text-2xl font-bold ">
+                <h1 className="text-2xl font-semibold ">
                   {" "}
                   € {data?.price}{" "}
                   <span className="font-normal text-base">night</span>
@@ -70,7 +70,7 @@ export default function Logement() {
 
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
                 <a href="/reservation">
-                  <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-br from-yellow-300  to-orange-300 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
+                  <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-t from-neutral-800 border border-neutral-950  to-neutral-900 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
                     Reserve
                   </button>
                 </a>
