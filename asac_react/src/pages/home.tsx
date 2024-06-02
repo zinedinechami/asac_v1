@@ -17,20 +17,20 @@ export default function Home() {
       <section className=" w-full  bg-gray-50 ">
         <div className="bg-gradient-to-t bg-gray-100">
           <a className="hover:opacity-80 transition-opacity" href="/">
-            <h1 className="text-neutral-900 font-semibold text-3xl pt-6 pl-24  ">
+            <h1 className="text-neutral-900 font-semibold sm:text-3xl text-2xl pt-6 sm:pl-24 pl-6  ">
               Asac
             </h1>
           </a>
 
           <div className="pt-6 pb-8 border-solid  ">
-            <h1 className="text-center text-5xl  font-bold text-neutral-950 ">
+            <h1 className="text-center sm:text-5xl text-3xl font-bold text-neutral-950 ">
               Your Home, Everywhere
             </h1>
-            <p className="text-center pt-1 text-base  text-neutral-900  ">
+            <p className="text-center pt-1 sm:text-base text-sm text-neutral-900  ">
               The cheapest nights at the best appartements.{" "}
             </p>
             {/* <button className="mx-auto">lol</button> */}
-            <div className="h-14 w-2/5 mx-auto mt-6 2 text-center flex">
+            <div className="h-14 sm:w-2/5 w-10/12 mx-auto mt-6 2 text-center flex">
               <div className="relative w-full">
                 <input
                   onChange={(e) => setSearch(e.target.value)}
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <div className="border shadow-sm">
-          <h1 className="text-neutral-900 pl-32 pt-6 text-base">
+          <h1 className="text-neutral-900 sm:pl-32 pl-6 pt-6 sm:text-base text-sm">
             Over <span className="font-bold">{database.length}</span> Rentals
             Available
           </h1>
@@ -84,10 +84,10 @@ export default function Home() {
               .map((data) => {
                 return (
                   <a key={data.id} href={"logement/" + data.id}>
-                    <article className="w-70 h-72 mr-10 mb-20 relative rounded-xl    ">
+                    <article className="sm:w-72 w-full h-72 mr-10 mb-20 relative rounded-xl    ">
                       <div className="hover:brightness-90	 transition-all ">
                         <img
-                          className="w-72 h-64 object-cover rounded-lg  border"
+                          className="sm:w-70 w-96 h-64 object-cover rounded-lg  border"
                           src={data.cover}
                           alt=""
                         />
