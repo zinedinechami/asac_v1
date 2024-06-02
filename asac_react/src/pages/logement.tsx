@@ -10,7 +10,7 @@ type UserData = {
   id: string;
   title: string;
   cover: string;
-  pictures: string;
+  pictures: string[];
   description: string;
   host: {
     name: string;

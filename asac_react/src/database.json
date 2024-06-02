@@ -27,7 +27,7 @@
       "Télévision"
     ],
     "tags": ["Canal Saint Martin", "République", "Appartement"],
-    "price": "171"
+    "price": 171
   },
   {
     "id": "46d188c5",
@@ -48,7 +48,7 @@
     "location": "Ile de France - Paris 20e",
     "equipments": ["Wi-fi", "Cuisine équipée", "Télévision", "Sèche Cheveux"],
     "tags": ["Buttes Chaumont", "Laumière", "Studio"],
-    "price": "113"
+    "price": 113
   },
   {
     "id": "7af00cd6",
@@ -75,7 +75,7 @@
       "Télévision"
     ],
     "tags": ["Parmentier", "Marais", "Parc", "Night Life"],
-    "price": "173"
+    "price": 173
   },
   {
     "id": "0979876d",
@@ -104,7 +104,7 @@
       "Parking"
     ],
     "tags": ["Goncourt", "Proche commerces"],
-    "price": "159"
+    "price": 159
   },
   {
     "id": "f72a452f",
@@ -126,7 +126,7 @@
     "location": "Ile de France - Paris 18e",
     "equipments": ["Chambre Séparée", "Parking"],
     "tags": ["Montmartre", "Culture", "Charme"],
-    "price": "131"
+    "price": 131
   },
   {
     "id": "b4c67936",
@@ -154,7 +154,7 @@
       "Parking"
     ],
     "tags": ["Transports", "Cheap", "18ème"],
-    "price": "199"
+    "price": 199
   },
   {
     "id": "bc6f7112",
@@ -184,7 +184,7 @@
       "Ascenseur"
     ],
     "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"],
-    "price": "183"
+    "price": 183
   },
   {
     "id": "cb2f9222",
@@ -212,7 +212,7 @@
       "Parking"
     ],
     "tags": ["Montparnasse", "Commerces", "Famille"],
-    "price": "184"
+    "price": 184
   },
   {
     "id": "d60ca600",
@@ -240,7 +240,7 @@
       "Ascenseur"
     ],
     "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"],
-    "price": "171"
+    "price": 171
   },
   {
     "id": "2cf259e1",
@@ -261,7 +261,7 @@
     "location": "Ile de France - Paris 11e",
     "equipments": ["Clic-clac", "Four", "Sèche Cheveux", "Wi-fi"],
     "tags": ["Marais", "Studio", "Parc"],
-    "price": "119"
+    "price": 119
   },
   {
     "id": "5323c29b",
@@ -289,7 +289,7 @@
       "Bouilloire"
     ],
     "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"],
-    "price": "173"
+    "price": 173
   },
   {
     "id": "af6d2d48",
@@ -317,7 +317,7 @@
       "Bouilloire"
     ],
     "tags": ["Forêt", "Nature", "Musée d'Ecouen"],
-    "price": "109"
+    "price": 109
   },
   {
     "id": "7cbb378e",
@@ -348,7 +348,7 @@
       "Équipements de base"
     ],
     "tags": ["Forêt", "Nature", "Grande maison"],
-    "price": "137"
+    "price": 137
   },
   {
     "id": "ba55a0cc",
@@ -381,7 +381,7 @@
       "Parking"
     ],
     "tags": ["Nature", "Groupe", "Maison"],
-    "price": "136"
+    "price": 136
   },
   {
     "id": "1e181317",
@@ -411,7 +411,7 @@
       "Parking"
     ],
     "tags": ["La Défense", "Loft", "Luxe"],
-    "price": "106"
+    "price": 106
   },
   {
     "id": "1e180563",
@@ -440,7 +440,7 @@
       "Micro-Ondes"
     ],
     "tags": ["Vue Parc", "Apt de Charme"],
-    "price": "104"
+    "price": 104
   },
   {
     "id": "6ff132c6",
@@ -466,6 +466,6 @@
       "Micro-Ondes"
     ],
     "tags": ["Studio", "Charmant", "13e"],
-    "price": "188"
+    "price": 188
   }
 ]

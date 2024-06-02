@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 interface Props {
-  pictures: string;
+  pictures: string[];
 }
 
 export default function Carrousel({ pictures }: Props) {
