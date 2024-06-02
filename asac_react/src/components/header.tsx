@@ -3,7 +3,7 @@ export default function Header() {
     <>
       <nav className="h-20 border-solid  border-b bg-gray-100 border">
         <a className="hover:opacity-80 transition-opacity w-24" href="/">
-          <h1 className="w-24 text-neutral-900 font-semibold text-3xl pt-5 pl-64   ">
+          <h1 className="w-24 text-neutral-900 font-semibold text-3xl pt-5 sm:pl-64 pl-6  ">
             Asac
           </h1>
         </a>

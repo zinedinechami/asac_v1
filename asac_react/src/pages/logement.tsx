@@ -42,9 +42,9 @@ export default function Logement() {
       {data && (
         <section className="bg-gray-50  text-neutral-950 pb-52">
           <Header />
-          <div className="w-8/12 mx-auto pt-8">
+          <div className="sm:w-8/12 w-10/12 mx-auto pt-8">
             {data && <Carrousel pictures={data?.pictures} />}
-            <div className="flex flex-row  relative ">
+            <div className="flex sm:flex-row flex-col relative ">
               <div className="pt-6">
                 <h1 className="text-2xl font-semibold">{data?.title}</h1>
                 <h2>{data?.location}</h2>
@@ -58,10 +58,10 @@ export default function Logement() {
                     Hosted by {data?.host.name}
                   </h3>
                 </div>
-                <hr className="my-6 h-px w-7/12 border-t-0 bg-neutral-200 " />
-                <p className="w-7/12 text-base">{data?.description}</p>
+                <hr className="my-6 h-px sm:w-7/12 w-full border-t-0 bg-neutral-200 " />
+                <p className="sm:w-7/12 mb-4 text-base">{data?.description}</p>
               </div>
-              <div className=" right-0 top-8 absolute  w-96 py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
+              <div className=" right-0 top-8 sm:absolute relative sm:w-96 w-full py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
                 <h1 className="text-2xl font-semibold ">
                   {" "}
                   € {data?.price}{" "}

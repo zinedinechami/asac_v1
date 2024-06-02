@@ -17,9 +17,9 @@ export default function Carrousel({ pictures }: Props) {
 
   return (
     <>
-      <div className="mx-auto w-full h-96 relative justify-center ">
+      <div className="mx-auto sm:w-full w-11/12 sm:h-96 h-64 relative justify-center ">
         <img
-          className="w-full h-96  rounded-xl object-cover  border shadow-sm "
+          className="w-full  sm:h-96 h-64  rounded-xl object-cover  border shadow-sm "
           src={pictures[imageIndex]}
           alt=""
         />
