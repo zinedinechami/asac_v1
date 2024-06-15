@@ -69,7 +69,7 @@ export default function Logement() {
                 </h1>
 
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
-                <a href="/reservation">
+                <a href="">
                   <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-t from-neutral-800 border border-neutral-950  to-neutral-900 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
                     Reserve
                   </button>
