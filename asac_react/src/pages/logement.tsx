@@ -61,7 +61,7 @@ export default function Logement() {
                 <hr className="my-6 h-px sm:w-7/12 w-full border-t-0 bg-neutral-200 " />
                 <p className="sm:w-7/12 mb-4 text-base">{data?.description}</p>
               </div>
-              <div className=" right-0 top-8 sm:absolute relative sm:w-96 w-full py-6 bg-neutral-100 p-5 mb-4 rounded-xl border shadow-sm  ">
+              <div className=" right-0 top-8 sm:absolute relative sm:w-96 w-full py-6  p-5 mb-4 rounded-xl border shadow-sm  ">
                 <h1 className="text-2xl font-semibold ">
                   {" "}
                   € {data?.price}{" "}

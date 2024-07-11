@@ -15,27 +15,25 @@ export default function Home() {
   return (
     <>
       <section className=" w-full  bg-gray-50 ">
-        <div className="bg-gradient-to-t bg-gray-100">
+        <div className=" ">
           <a className="hover:opacity-80 transition-opacity" href="/">
-            <h1 className="text-neutral-900 font-semibold sm:text-3xl text-2xl pt-6 sm:pl-24 pl-6  ">
+            <h1 className="text-neutral-900  sm:text-3xl text-2xl pt-6 sm:pl-32 pl-6  ">
               Asac
             </h1>
           </a>
 
-          <div className="pt-6 pb-8 border-solid  ">
+          <div className="pt-6 pb-10 border-b  border-neutral-100">
             <h1 className="text-center sm:text-5xl text-3xl font-bold text-neutral-950 ">
-              Your Home, Everywhere
+              Your Home Everywhere
             </h1>
-            <p className="text-center pt-1 sm:text-base text-sm text-neutral-900  ">
-              The cheapest nights at the best appartements.{" "}
-            </p>
+
             {/* <button className="mx-auto">lol</button> */}
-            <div className="h-14 sm:w-2/5 w-10/12 mx-auto mt-6 2 text-center flex">
+            <div className="h-14 sm:w-2/5 w-10/12 mx-auto mt-6  text-center flex">
               <div className="relative w-full">
                 <input
                   onChange={(e) => setSearch(e.target.value)}
                   placeholder="Find your appartement"
-                  className="h-14 w-full rounded-xl cursor-pointer shadow mt-0 bg-white mx-auto ring-neutral-400 border pl-12 focus:ring-1 outline-0   transition-colors"
+                  className="h-14 w-full rounded-full cursor-pointer shadow mt-0 bg-white mx-auto ring-neutral-400 border pl-12 focus:ring-1 outline-0   transition-colors"
                 ></input>
                 <div
                   className="absolute inset-y-0 left-0 pl-3  
@@ -59,7 +57,7 @@ export default function Home() {
                 </div>
               </div>
               <a href="#appartements">
-                <button className="h-14  bg-gradient-to-t from-neutral-800 border border-neutral-950  to-neutral-900  shadow   text-white mx-2 px-5 rounded-xl font-medium hover:scale-95 transition">
+                <button className="h-14  bg-gradient-to-t from-neutral-800 border border-neutral-950  to-neutral-900  shadow   text-white mx-2 px-6 rounded-full font-medium hover:scale-95 transition">
                   <div className="flex">Search</div>
                 </button>
               </a>
@@ -85,15 +83,15 @@ export default function Home() {
                 return (
                   <a key={data.id} href={"logement/" + data.id}>
                     <article className="sm:w-72 w-full h-72 mr-10 mb-20 relative rounded-xl    ">
-                      <div className="hover:brightness-90	 transition-all ">
+                      <div className="hover:brightness-95	 transition-all ">
                         <img
-                          className="sm:w-70 w-96 h-64 object-cover rounded-lg  border"
+                          className="sm:w-70 w-96 h-64 object-cover rounded-xl  "
                           src={data.cover}
                           alt=""
                         />
                       </div>
                       <div className="mb-2">
-                        <p className="text-neutral-900 pt-2 text-sm font-semibold">
+                        <p className="text-neutral-900 pt-2 text-base font-semibold">
                           {data.title}
                         </p>
 
