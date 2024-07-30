@@ -11,8 +11,8 @@ export default function Home() {
 
   return (
     <>
-      <section className=" w-full  bg-neutral-50 ">
-        <div className="bg-white">
+      <section className=" w-full  bg-neutral-white ">
+        <div className="bg-gray-50">
           <a className=" " href="/">
             <h1 className=" ml-32  text-2xl font-bold text-blue-500     pt-6  ">
               asac<span className="font-normal">.com</span>
@@ -21,14 +21,14 @@ export default function Home() {
 
           <div className="pt-8 pb-12 border-b border-neutral-200 ">
             <h1 className="text-center sm:text-5xl text-3xl font-bold text-blue-500 ">
-              Your home, <span className="  "> everywhere</span>.
+              Your home everywhere.
             </h1>
-            <h2 className="text-center text-base font-medium mt-1 text-neutral-500">
+            <h2 className="text-center text-base  mt-1 text-neutral-700">
               Find the best appartements at the cheapest prices.
             </h2>
 
             {/* <button className="mx-auto">lol</button> */}
-            <div className="h-12 sm:w-2/5 w-10/12 mx-auto mt-5  text-center flex">
+            <div className="h-12 sm:w-2/5 w-10/12 mx-auto mt-6  text-center flex">
               <div className="relative w-full">
                 <input
                   onChange={(e) => setSearch(e.target.value)}
