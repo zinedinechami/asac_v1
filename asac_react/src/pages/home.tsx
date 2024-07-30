@@ -14,12 +14,12 @@ export default function Home() {
       <section className=" w-full  bg-neutral-50 ">
         <a className=" text-center" href="/">
           <div></div>
-          <h1 className="   text-xl font-medium text-neutral-900   pt-6   ">
+          <h1 className="   text-xl font-medium text-neutral-900   pt-7  ">
             Asac.com
           </h1>
         </a>
 
-        <div className="pt-12 pb-12 ">
+        <div className="pt-14 pb-8 ">
           <h1 className="text-center sm:text-5xl text-3xl font-medium text-neutral-800 new_font">
             Your home, everywhere.
           </h1>
@@ -82,7 +82,7 @@ export default function Home() {
               .map((data) => {
                 return (
                   <a key={data.id} href={"logement/" + data.id}>
-                    <article className="sm:w-72 w-full h-72 mr-10 mb-20 relative rounded-lg    ">
+                    <article className="sm:w-72 w-full h-72 mr-10 mb-16 relative rounded-lg    ">
                       <div className="hover:brightness-95	 transition-all ">
                         <img
                           className="sm:w-70 w-96 h-64 object-cover rounded-lg shadow-md  "
