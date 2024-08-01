@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import database from "../database.json";
 import Carrousel from "../components/carrousel";
 import Header from "../components/header";
-import Footer from "../components/footer";
 
 type UserData = {
   id: string;
