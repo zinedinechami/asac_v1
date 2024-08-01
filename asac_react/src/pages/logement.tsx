@@ -61,7 +61,7 @@ export default function Logement() {
                 <hr className="my-6 h-px sm:w-7/12 w-full border-t-0 bg-neutral-200 " />
                 <p className="sm:w-7/12 mb-4 text-base">{data?.description}</p>
               </div>
-              <div className=" right-0 top-8 sm:absolute relative sm:w-96 w-full py-6  p-5 mb-4 rounded-xl border shadow-sm  ">
+              <div className=" right-0 top-8 sm:absolute relative sm:w-96 w-full py-6  p-5 mb-4 rounded-xl border shadow-sm bg-gray-100  ">
                 <h1 className="text-2xl font-semibold ">
                   {" "}
                   € {data?.price}{" "}
@@ -70,24 +70,24 @@ export default function Logement() {
 
                 {/* <h2 className="text-2xl">{data?.rating}</h2> */}
                 <a href="">
-                  <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-t from-neutral-800 border border-neutral-950  to-neutral-900 text-neutral-50 rounded-lg shadow-sm font-semibold  hover:scale-95 transition">
+                  <button className="w-full py-3 mt-4 mb-4 bg-gradient-to-t from-blue-500 border border-blue-500  to-blue-400 text-neutral-50 rounded-lg shadow-sm font-medium  hover:scale-95 transition">
                     Reserve
                   </button>
                 </a>
                 <div className="pb-4">
-                  <p className="pt-2 underline">
+                  <p className="pt-2 ">
                     € {data?.price} x 5
                     <span className=" pl-2 absolute right-5">
-                      ${data?.price * 5}
+                      € {data?.price * 5}
                     </span>
                   </p>
 
-                  <p className="pt-2 underline">
+                  <p className="pt-2 ">
                     {" "}
                     Asac Service Fee
                     <span className=" pl-2 absolute right-5">€ 100</span>
                   </p>
-                  <p className="pt-2 underline">
+                  <p className="pt-2 ">
                     Taxes
                     <span className="  pl-2 absolute right-5">€ 10</span>
                   </p>
@@ -104,7 +104,6 @@ export default function Logement() {
           </div>
         </section>
       )}
-      <Footer />
     </>
   );
 }
