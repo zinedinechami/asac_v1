@@ -64,52 +64,49 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <h1 className="ml-32 mt-6">
+          Showing <span className="font-bold">{database.length}</span> Rental
+          Appartements
+        </h1>
+        <div
+          id="appartements"
+          className=" flex flex-wrap justify-center  pt-10  "
+        >
+          {database
+            .filter((data) => {
+              return search.toLowerCase() === ""
+                ? data
+                : data.title.toLowerCase().includes(search);
+            })
+            .map((data) => {
+              return (
+                <a key={data.id} href={"logement/" + data.id}>
+                  <article className="sm:w-72 w-full h-72 mr-14 mb-16 relative rounded-xl   ">
+                    <div className="hover:brightness-95	 transition-all ">
+                      <img
+                        className="sm:w-70 w-96 h-64 object-cover rounded-xl shadow-md    "
+                        src={data.cover}
+                        alt=""
+                      />
+                    </div>
+                    <div className="mb-2">
+                      <p className="text-neutral-900 pt-2 text-base font-medium">
+                        {data.title}
+                      </p>
 
-        <div className="">
-          <h1 className="text-neutral-900 sm:pl-32 pl-6 pt-6 sm:text-base text-sm">
-            Showing <span className="font-bold">{database.length}</span> Rental
-            Appartements
-          </h1>
-          <div
-            id="appartements"
-            className="ml-auto flex flex-wrap w-11/12 pt-6 "
-          >
-            {database
-              .filter((data) => {
-                return search.toLowerCase() === ""
-                  ? data
-                  : data.title.toLowerCase().includes(search);
-              })
-              .map((data) => {
-                return (
-                  <a key={data.id} href={"logement/" + data.id}>
-                    <article className="sm:w-72 w-full h-72 mr-10 mb-16 relative rounded-xl   ">
-                      <div className="hover:brightness-95	 transition-all ">
-                        <img
-                          className="sm:w-70 w-96 h-64 object-cover rounded-xl shadow-md    "
-                          src={data.cover}
-                          alt=""
-                        />
-                      </div>
-                      <div className="mb-2">
-                        <p className="text-neutral-900 pt-2 text-base font-medium">
-                          {data.title}
-                        </p>
+                      <p className="text-neutral-500 text-sm ">
+                        Hosted by {data.host.name}
+                      </p>
 
-                        <p className="text-neutral-500 text-sm ">
-                          Hosted by {data.host.name}
-                        </p>
-
-                        <p className="text-neutral-900 text-sm font-bold ">
-                          € {data.price}{" "}
-                          <span className="font-normal">night</span>
-                        </p>
-                      </div>
-                    </article>
-                  </a>
-                );
-              })}
-          </div>
+                      <p className="text-neutral-900 text-sm font-bold ">
+                        € {data.price}{" "}
+                        <span className="font-normal">night</span>
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              );
+            })}
         </div>
       </section>
     </>
